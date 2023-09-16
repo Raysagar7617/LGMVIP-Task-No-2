@@ -49,7 +49,7 @@ public class Tic_Tac_Toe implements ActionListener
 
     public void checkForWinner()
     {
-        // Check rows
+        
         for (int i = 0; i < 9; i += 3)
         {
             if (buttons[i].getText().equals(buttons[i+1].getText()) && buttons[i].getText().equals(buttons[i+2].getText()) && !buttons[i].isEnabled()) {
@@ -59,7 +59,7 @@ public class Tic_Tac_Toe implements ActionListener
             }
         }
 
-        // Check columns
+        
         for (int i = 0; i < 3; i++)
         {
             if (buttons[i].getText().equals(buttons[i+3].getText()) && buttons[i].getText().equals(buttons[i+6].getText()) && !buttons[i].isEnabled())
